@@ -26,12 +26,13 @@
             max-width: 500px;
             margin-left: auto;
             margin-right: auto;
-            height: 350px;
-            max-height: 400px;
+            height: 300px;
+            max-height: 350px;
         }
         @media (min-width: 768px) {
             .chart-container {
                 height: 400px;
+                max-height: 400px;
             }
         }
         .timeline-item-content {
@@ -65,16 +66,36 @@
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0">
-                    <h1 class="text-xl font-bold text-slate-800">Nguyễn Văn Hồng</h1>
+                    <a href="#" class="text-xl font-bold text-slate-800">Nguyễn Văn Hồng</a>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <a href="#summary" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-600">Tổng Quan</a>
                         <a href="#skills" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-600">Kỹ Năng</a>
                         <a href="#experience" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-600">Kinh Nghiệm</a>
-                        <a href="#projects" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-600">Dự Án Tiêu Biểu</a>
+                        <a href="#projects" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-600">Dự Án</a>
                         <a href="#education" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-600">Học Vấn</a>
                     </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-slate-500 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="h-6 w-6 hidden" id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="#summary" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-600">Tổng Quan</a>
+                    <a href="#skills" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-600">Kỹ Năng</a>
+                    <a href="#experience" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-600">Kinh Nghiệm</a>
+                    <a href="#projects" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-600">Dự Án</a>
+                    <a href="#education" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-600">Học Vấn</a>
                 </div>
             </div>
         </nav>
@@ -82,23 +103,23 @@
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
-        <section id="hero" class="text-center py-16">
+        <section id="hero" class="text-center py-12 md:py-16">
             <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight">NGUYỄN VĂN HỒNG</h1>
             <p class="mt-4 text-xl md:text-2xl font-semibold text-sky-600">Project Lead | GIS & 3D Spatial Data Expert</p>
-            <div class="mt-8 flex justify-center items-center space-x-6 text-slate-600">
-                <span>0397145151</span>
-                <span class="text-slate-300">|</span>
-                <span>nguyenhong1611209@gmail.com</span>
-                <span class="text-slate-300">|</span>
-                <span>Phường Bình Trị Đông, TP.HCM</span>
+            <div class="mt-8 flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-slate-600">
+                <a href="tel:0397145151" class="hover:text-sky-600 transition-colors">📞 0397145151</a>
+                <span class="hidden sm:inline text-slate-300">|</span>
+                <a href="mailto:nguyenhong1611209@gmail.com" class="hover:text-sky-600 transition-colors">✉️ nguyenhong1611209@gmail.com</a>
+                <span class="hidden sm:inline text-slate-300">|</span>
+                <a href="https://pinky2070500.github.io/Project-Lead---HD-Map/" target="_blank" class="hover:text-sky-600 transition-colors">🌐 Portfolio</a>
             </div>
         </section>
 
         <section id="summary" class="py-16">
-            <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-slate-200 card-item">
+            <div class="max-w-3xl mx-auto bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 card-item">
                 <h2 class="text-3xl font-bold text-center text-slate-800 mb-6">Tóm Tắt Năng Lực</h2>
-                <p class="text-lg text-slate-600 leading-relaxed text-justify">
-                    Là một chuyên gia về Địa tin học (Geomatics), GIS và Viễn thám, tôi có hơn 3 năm kinh nghiệm dẫn dắt đội ngũ kỹ thuật và quản lý dự án. Năng lực quản lý của tôi bao quát từ việc xây dựng đề xuất (proposal), báo cáo kỹ thuật, thuyết minh dự án, quản lý tiến độ, xây dựng hệ thống, điều phối đa bên cho đến đào tạo và phát triển đội ngũ. Tôi có chuyên môn về xử lý và phân tích dữ liệu không gian lớn bao gồm <strong class="text-sky-600 font-semibold">Point Cloud (LiDAR), dữ liệu UAV, Photogrammetry, DEM, LULC, ...</strong> và tích hợp <strong class="text-sky-600 font-semibold">BIM-GIS</strong> để tạo ra các sản phẩm bản đồ 3D chi tiết. Với kinh nghiệm xây dựng CSDL GIS, quy trình chuẩn hóa dữ liệu và đánh giá độ chính xác bản đồ, tôi thành thạo các công cụ như <strong class="text-amber-600 font-semibold">ArcGIS, QGIS, PostGIS, Google Earth Engine, ...</strong> và tự động hóa quy trình bằng <strong class="text-amber-600 font-semibold">Python (PyQGIS, GDAL)</strong>. Tôi mong muốn áp dụng những kỹ năng này để đóng góp vào sự phát triển công nghệ bản đồ HD Map cho xe tự lái tại VIETMAP.
+                <p class="text-base md:text-lg text-slate-600 leading-relaxed text-justify">
+                    Là một chuyên gia về Địa tin học (Geomatics), GIS và Viễn thám, tôi có hơn 3 năm kinh nghiệm dẫn dắt đội ngũ kỹ thuật và quản lý dự án. Năng lực quản lý của tôi bao quát từ việc xây dựng đề xuất (proposal), báo cáo kỹ thuật, quản lý tiến độ, điều phối đa bên cho đến đào tạo và phát triển đội ngũ. Tôi có chuyên môn sâu về xử lý và phân tích các bộ dữ liệu không gian phức tạp, bao gồm <strong class="text-sky-600 font-semibold">Point Cloud (LiDAR), dữ liệu UAV, Photogrammetry, DEM, LULC</strong>, và tích hợp <strong class="text-sky-600 font-semibold">BIM-GIS</strong> để tạo ra các sản phẩm bản đồ 3D chi tiết. Với kinh nghiệm xây dựng quy trình chuẩn hóa dữ liệu và đánh giá độ chính xác bản đồ, tôi thành thạo các công cụ như <strong class="text-amber-600 font-semibold">ArcGIS, QGIS, PostGIS, Google Earth Engine</strong>, và tự động hóa quy trình bằng <strong class="text-amber-600 font-semibold">Python (PyQGIS, GDAL)</strong>. Tôi mong muốn áp dụng những kỹ năng này để đóng góp vào sự phát triển công nghệ bản đồ HD Map cho xe tự lái tại VIETMAP.
                 </p>
             </div>
         </section>
@@ -119,18 +140,18 @@
         <section id="experience" class="py-16">
             <h2 class="text-3xl font-bold text-center text-slate-800 mb-12">Hành Trình Sự Nghiệp</h2>
             <div id="timeline-container" class="relative max-w-3xl mx-auto">
-                <div class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-slate-200"></div>
+                <div class="absolute left-4 md:left-1/2 md:-translate-x-1/2 h-full w-0.5 bg-slate-200"></div>
             </div>
         </section>
 
         <section id="projects" class="py-16">
              <h2 class="text-3xl font-bold text-center text-slate-800 mb-12">Dự Án Tiêu Biểu</h2>
              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="md:col-span-2 bg-white p-8 rounded-2xl shadow-lg border border-sky-200 card-item">
-                    <h3 class="text-2xl font-bold text-sky-700">WebGIS Tích Hợp BIM-GIS Cho Nhà Ga Metro Số 1, TP.HCM</h3>
+                <div class="md:col-span-2 bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-sky-200 card-item">
+                    <h3 class="text-xl md:text-2xl font-bold text-sky-700">WebGIS Tích Hợp BIM-GIS Cho Nhà Ga Metro Số 1, TP.HCM</h3>
                     <p class="mt-2 text-sm text-slate-500">Vai trò: Project Lead & Technical Architect</p>
                     <p class="mt-4 text-slate-600 leading-relaxed">
-                        Dẫn dắt đội ngũ thiết kế và triển khai hệ thống WebGIS 3D phục vụ công tác quản lý, bảo trì và vận hành tài sản cho nhà ga Metro số 1. Dự án thành công trong việc trực quan hóa dữ liệu BIM, kết hợp mô hình BIM chi tiết trên nền GIS, mang lại hiệu quả cao trong việc hỗ trợ ra quyết định.
+                        Dẫn dắt đội ngũ thiết kế và triển khai hệ thống WebGIS 3D đột phá, phục vụ công tác quản lý và vận hành tài sản cho nhà ga Metro. Dự án thành công trong việc trực quan hóa dữ liệu phức tạp, kết hợp mô hình BIM chi tiết với bối cảnh GIS rộng lớn, mang lại hiệu quả cao trong việc ra quyết định.
                     </p>
                     <div class="mt-6">
                         <h4 class="font-semibold text-slate-700 mb-3">Công nghệ nổi bật:</h4>
@@ -143,33 +164,24 @@
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 card-item">
-                    <h3 class="text-xl font-bold text-sky-700">Hệ thống GIS Y tế & Môi trường</h3>
+                    <h3 class="text-lg md:text-xl font-bold text-sky-700">Hệ thống GIS Y tế & Môi trường</h3>
                     <p class="mt-1 text-sm text-slate-500">Vai trò: GIS & Web Developer</p>
-                    <p class="mt-3 text-slate-600">Xây dựng các hệ thống GIS phục vụ phòng chống dịch bệnh (sốt xuất huyết), quản lý y tế học đường, giám sát chất lượng nước, ... cho các Sở ban ngành TP.HCM.</p>
-                     <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2.5 py-1 rounded-full">PHP/Yii2</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2.5 py-1 rounded-full">Leaflet</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2.5 py-1 rounded-full">GeoServer</span>
-                    </div>
+                    <p class="mt-3 text-slate-600">Xây dựng các hệ thống GIS phục vụ phòng chống dịch bệnh, quản lý y tế học đường và giám sát chất lượng nước cho các Sở ban ngành TP.HCM.</p>
                 </div>
                  <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 card-item">
-                    <h3 class="text-xl font-bold text-sky-700">Hệ thống Quản lý Bảo vệ Rừng</h3>
+                    <h3 class="text-lg md:text-xl font-bold text-sky-700">Hệ thống Quản lý Bảo vệ Rừng</h3>
                     <p class="mt-1 text-sm text-slate-500">Vai trò: GIS Developer</p>
-                    <p class="mt-3 text-slate-600">Tư vấn và triển khai hệ thống GIS cho Ban QLR Phòng hộ Bình Chánh - Củ Chi, ứng dụng viễn thám (Google Earth Engine) để theo dõi biến động rừng.</p>
-                     <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2.5 py-1 rounded-full">Google Earth Engine</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2.5 py-1 rounded-full">PHP/Yii2</span>
-                    </div>
+                    <p class="mt-3 text-slate-600">Tư vấn và triển khai hệ thống GIS cho Ban QLR Phòng hộ Bình Chánh - Củ Chi, ứng dụng viễn thám để theo dõi biến động rừng.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 card-item">
-                    <h3 class="text-xl font-bold text-sky-700">Kiến trúc tổng thể GIS TP.HCM</h3>
+                    <h3 class="text-lg md:text-xl font-bold text-sky-700">Kiến trúc tổng thể GIS TP.HCM</h3>
                     <p class="mt-1 text-sm text-slate-500">Vai trò: GIS Professional</p>
-                    <p class="mt-3 text-slate-600">Xây dựng kiến trúc tổng thể, chi tiết hệ thống GIS và Viễn thám trong quản lý đất đai, quy hoạch, xây dựng cho Sở KH&CN.</p>
+                    <p class="mt-3 text-slate-600">Xây dựng báo cáo kiến trúc tổng thể, chi tiết hệ thống GIS và Viễn thám trong quản lý đất đai, quy hoạch cho Sở KH&CN.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 card-item">
-                    <h3 class="text-xl font-bold text-sky-700">Bản đồ nền HCMGIS MAP</h3>
+                    <h3 class="text-lg md:text-xl font-bold text-sky-700">Bản đồ nền HCMGIS MAP</h3>
                     <p class="mt-1 text-sm text-slate-500">Vai trò: GIS Developer</p>
-                    <p class="mt-3 text-slate-600">Thu thập, chuẩn hóa và xây dựng dữ liệu bản đồ nền dùng chung cho các dự án của trung tâm từ nguồn dữ liệu OpenStreetMap và các nguồn khác.</p>
+                    <p class="mt-3 text-slate-600">Thu thập, chuẩn hóa và xây dựng dữ liệu bản đồ nền dùng chung cho các dự án của trung tâm từ nguồn dữ liệu mở.</p>
                 </div>
              </div>
         </section>
@@ -210,11 +222,6 @@
         <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
             <p class="font-bold text-lg">Cảm ơn đã xem xét hồ sơ của tôi.</p>
             <p class="mt-2 text-slate-300">Sẵn sàng trao đổi thêm về cơ hội tại VIETMAP.</p>
-             <div class="mt-6 flex justify-center items-center space-x-6 text-slate-300">
-                <span>0397145151</span>
-                <span class="text-slate-500">|</span>
-                <span>nguyenhong1611209@gmail.com</span>
-            </div>
         </div>
     </footer>
 
@@ -238,7 +245,7 @@
             const skillsList = [
                 { name: 'LiDAR & Point Cloud' },
                 { name: 'Python (PyQGIS)' },
-                { name: 'Google Earth Engine' },
+                { name: 'React & NestJS' },
                 { name: 'BIM-GIS Integration' },
                 { name: 'ArcGIS & QGIS' },
                 { name: 'PostgreSQL/PostGIS' },
@@ -252,7 +259,6 @@
                     role: 'GIS & RS Manager',
                     company: 'HCMGIS',
                     time: '01/2022 - Hiện tại',
-                    side: 'left',
                     details: [
                         'Lãnh đạo và quản lý đội ngũ kỹ sư, giám sát tiến độ và đảm bảo chất lượng dự án.',
                         'Chịu trách nhiệm chính về kỹ thuật, đưa ra các quyết định về công nghệ và kiến trúc hệ thống.',
@@ -264,7 +270,6 @@
                     role: 'WebGIS Fullstack Developer',
                     company: 'HCMGIS',
                     time: '06/2019 - 12/2021',
-                    side: 'right',
                     details: [
                         'Tham gia toàn bộ vòng đời phát triển dự án WebGIS, từ thu thập yêu cầu đến triển khai.',
                         'Xây dựng thành công các hệ thống WebGIS cộng đồng: phòng chống sốt xuất huyết, y tế học đường, giám sát chất lượng nước.',
@@ -275,7 +280,6 @@
                     role: 'Giảng viên GIS & Viễn thám',
                     company: 'ĐH Sư phạm TP.HCM',
                     time: '2024 - Hiện tại',
-                    side: 'left',
                     details: [
                         'Giảng dạy các học phần lý thuyết và thực hành về GIS, Viễn thám.',
                         'Hướng dẫn sinh viên thực hiện các đề tài nghiên cứu khoa học ứng dụng.'
@@ -293,7 +297,7 @@
                         r: {
                             angleLines: { color: 'rgba(0, 0, 0, 0.1)' },
                             grid: { color: 'rgba(0, 0, 0, 0.1)' },
-                            pointLabels: { font: { size: 13, weight: '500' }, color: '#334155' },
+                            pointLabels: { font: { size: 12, weight: '500' }, color: '#334155' },
                             ticks: {
                                 backdropColor: 'transparent',
                                 color: '#64748b',
@@ -315,8 +319,8 @@
             const skillsGrid = document.getElementById('skills-grid');
             skillsList.forEach(skill => {
                 const skillEl = document.createElement('div');
-                skillEl.className = 'card-item bg-white p-4 rounded-lg text-center shadow-sm border border-slate-200';
-                skillEl.innerHTML = `<p class="font-semibold text-slate-700 text-sm">${skill.name}</p>`;
+                skillEl.className = 'card-item bg-white p-3 rounded-lg text-center shadow-sm border border-slate-200';
+                skillEl.innerHTML = `<p class="font-semibold text-slate-700 text-xs md:text-sm">${skill.name}</p>`;
                 skillsGrid.appendChild(skillEl);
             });
 
@@ -326,7 +330,7 @@
                 itemEl.className = `relative mb-8 timeline-item`;
                 
                 const contentHTML = `
-                    <div class="relative ${item.side === 'left' ? 'mr-auto md:mr-0 md:ml-auto md:pr-10' : 'ml-auto md:ml-0 md:mr-auto md:pl-10'} md:w-1/2">
+                    <div class="relative ml-10 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:ml-auto md:pl-10' : 'md:mr-auto md:pr-10'}">
                         <div class="cursor-pointer bg-white p-6 rounded-xl shadow-sm border border-slate-200 w-full card-item">
                             <div class="flex justify-between items-start">
                                 <div>
@@ -343,7 +347,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="absolute top-5 ${item.side === 'left' ? 'left-1/2 -ml-2.5' : 'left-1/2 -ml-2.5'} w-5 h-5 bg-white border-4 border-sky-500 rounded-full"></div>
+                    <div class="absolute top-5 left-4 -ml-2.5 md:left-1/2 md:-ml-2.5 w-5 h-5 bg-white border-4 border-sky-500 rounded-full"></div>
                 `;
                 itemEl.innerHTML = contentHTML;
                 timelineContainer.appendChild(itemEl);
@@ -368,6 +372,24 @@
                 }
             });
 
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIconOpen = document.getElementById('menu-icon-open');
+            const menuIconClose = document.getElementById('menu-icon-close');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                menuIconOpen.classList.toggle('hidden');
+                menuIconClose.classList.toggle('hidden');
+            });
+            
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuIconOpen.classList.remove('hidden');
+                    menuIconClose.classList.add('hidden');
+                });
+            });
         });
     </script>
 </body>
